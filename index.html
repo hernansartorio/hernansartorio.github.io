@@ -1,0 +1,69 @@
+---
+---
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  <title>Hernán Sartorio</title>
+
+  <link href="//cloud.webtype.com/css/f69e33af-3aee-403a-a2cc-588c50a2bbfe.css" rel="stylesheet" type="text/css" />
+  
+  {% stylesheet style %}
+  
+  <noscript>
+    <style>
+      p[data-parent] {
+        display: block !important;
+      }
+      span[data-parent] {
+        display: inline !important;
+      }
+      a[data-id] {
+        border: none;
+      }
+      a[data-id][data-replace] {
+        display: none;
+      }
+    </style>
+  </noscript>
+  
+</head>
+
+<body>
+
+  <div class="container">
+  
+    <p>Hello.</p> 
+
+    <p>My name is <a data-id="1" tabindex="0">Hernán</a><span data-parent="1"> Sartorio</span>.</p>
+
+    <p>
+      I <a data-id="2" data-replace tabindex="0">make</a> 
+      <span data-parent="2">design and develop</span>
+      <a data-id="3" data-replace tabindex="0">web products</a><span data-parent="3">websites and web applications</span>.
+    </p>
+    
+    <p data-parent="2">Lately, I’ve been working on <a href="http://uruguaypass.uy" class="uruguaypass">UruguayPass</a>.</p>
+
+    <p>
+      <span data-parent="4">I’m available for new projects.</span>
+      <a data-id="4" tabindex="0">You should</a> <a data-id="5" tabindex="0">say hello</a>.
+    </p>
+    
+    <p data-parent="5">
+      <a href="mailto:hello@hernansartorio.com">Email me</a>, or find me on 
+      <a href="https://twitter.com/hernansartorio" class="twitter">Twitter</a>, 
+      <a href="https://dribbble.com/hernansartorio" class="dribbble">Dribbble</a>, 
+      <a href="https://github.com/hernansartorio">GitHub</a> or 
+      <a href="https://linkedin.com/in/hernansartorio" class="linkedin">LinkedIn</a>.
+    </p>
+
+  </div>
+
+  {% javascript application %}
+    
+</body>
+</html>
