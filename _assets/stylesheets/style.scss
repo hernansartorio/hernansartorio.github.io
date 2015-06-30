@@ -21,6 +21,13 @@ body {
   }
 }
 
+::selection {
+  background: #f5f5f5; 
+}
+::-moz-selection {
+  background: #f5f5f5; 
+}
+
 p {
   line-height: 1.6;
   margin: 0;
@@ -81,14 +88,4 @@ a {
   @media screen and (min-height: 640px) {
     padding: 120px 24px;
   }
-}
-
-::selection {
-  background: #f5f5f5; 
-}
-::-moz-selection {
-  background: #f5f5f5; 
-}
-::-webkit-selection{
-  background: #f5f5f5; 
 }
