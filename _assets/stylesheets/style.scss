@@ -1,7 +1,7 @@
 body {
   background-color: #fdfdfd;
   color: #444;
-  font-family: 'Nitti', monospace;
+  font-family: 'Nitti Light', monospace;
   font-size: 16px;
   line-height: 1;
   margin: 0;
@@ -13,11 +13,9 @@ body {
   }
 }
  
-.tr-coretext {
-  &.tr-aa-subpixel, &.tr-aa-unknown-subpixel {
-    body {
-      font-family: 'Nitti Light', monospace;
-    }
+:not(.tr-coretext), .tr-coretext:not(.tr-aa-unknown-subpixel):not(.tr-aa-subpixel) {
+  body {
+    font-family: 'Nitti', monospace;
   }
 }
 
@@ -65,7 +63,7 @@ a {
     }
   }
   &.dribbble {
-    &:hover, &:focus { 
+    &:hover, &:active, &:focus { 
       border-bottom-color: #ea4c89;
     }
   }
