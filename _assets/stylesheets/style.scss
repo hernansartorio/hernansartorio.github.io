@@ -42,7 +42,7 @@ a {
   text-decoration: none; 
   transition: border .2s ease-in-out;
   &[href] {
-    border-bottom: 2px solid #aaccff;
+    border-bottom: 2px solid #afcaff;
     &:hover, &:active, &:focus { 
       border-bottom-color: #444;
     }
@@ -65,7 +65,7 @@ a {
     }
   }
   &.dribbble {
-    &:hover, &:active, &:focus { 
+    &:hover, &:focus { 
       border-bottom-color: #ea4c89;
     }
   }
