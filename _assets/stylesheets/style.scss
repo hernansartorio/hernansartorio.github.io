@@ -1,6 +1,6 @@
 body {
   background-color: #fcfcfc;
-  color: #555;
+  color: #444;
   font-family: 'Nitti', monospace;
   font-size: 16px;
   line-height: 1;
@@ -40,14 +40,14 @@ a {
   text-decoration: none; 
   transition: border .2s ease-in-out;
   &[href] {
-    border-bottom: 2px solid #aaccff;
+    border-bottom: 2px solid #aacfff;
     &:hover, &:active, &:focus { 
       border-bottom-color: #444;
     }
   }
   &[data-id] {
     cursor: pointer;
-    border-bottom: 2px solid #ddd;
+    border-bottom: 2px solid #dadada;
     &:hover, &:active, &:focus { 
       border-bottom-color: #ccc;
     }
@@ -72,6 +72,16 @@ a {
       border-bottom-color: #0077b5;
     }
   }
+  &.propit {
+    &:hover, &:active, &:focus { 
+      border-bottom-color: #39c57e;
+    }
+  }
+  &.uruguay360 {
+    &:hover, &:active, &:focus { 
+      border-bottom-color: #389cdc;
+    }
+  }
 }
 
 *[data-parent]:not(.show), .hide {
@@ -80,7 +90,7 @@ a {
 
 .container {
   margin: 0 auto;
-  max-width: 25em;
+  max-width: 33em;
   overflow: hidden;
   padding: 60px 24px;
   @media screen and (min-height: 640px) {
