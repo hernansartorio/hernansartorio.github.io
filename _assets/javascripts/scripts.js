@@ -5,6 +5,7 @@ $('a[data-id]').click(function(event) {
   if ($($(this)).data('replace') != undefined) {
     $(this).addClass('hide');
   }
+  clicky.goal($(this).text());
 });
 
 $('a[data-id]').keypress(function(event) {
