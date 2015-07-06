@@ -5,7 +5,7 @@ $('a[data-id]').click(function(event) {
   if ($($(this)).data('replace') != undefined) {
     $(this).addClass('hide');
   }
-  clicky.goal($(this).text());
+  ga('send', 'event', 'click', $(this).text());
 });
 
 $('a[data-id]').keypress(function(event) {
