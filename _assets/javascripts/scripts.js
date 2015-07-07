@@ -5,7 +5,11 @@ $('a[data-id]').click(function(event) {
   if ($($(this)).data('replace') != undefined) {
     $(this).addClass('hide');
   }
-  ga('send', 'event', 'click', $(this).text());
+  ga('send', 'event', 'text', $(this).text());
+});
+
+$('a[href]').click(function(event) {
+  ga('send', 'event', 'link', $(this).text());
 });
 
 $('a[data-id]').keypress(function(event) {
