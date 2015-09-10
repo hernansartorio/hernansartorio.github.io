@@ -1,0 +1,93 @@
+---
+---
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  <title>Hernán Sartorio</title>
+
+  <link href="//cloud.webtype.com/css/f69e33af-3aee-403a-a2cc-588c50a2bbfe.css" rel="stylesheet" type="text/css" />
+  
+  {% stylesheet v1/style %}
+  
+  <noscript>
+    <style>
+      p[data-parent] {
+        display: block !important;
+      }
+      span[data-parent] {
+        display: inline !important;
+      }
+      a[data-id] {
+        border: none;
+      }
+      a[data-id][data-replace] {
+        display: none;
+      }
+    </style>
+  </noscript>
+  
+</head>
+
+<body>
+
+  <div class="container">
+  
+    <p>Hello.</p> 
+
+    <p>My name is <a data-id="1" tabindex="0">Hernán</a><span data-parent="1"> Sartorio</span>.</p>
+
+    <p>
+      I <a data-id="2" data-replace tabindex="0">make</a> 
+      <a data-id="6" data-parent="2">design and develop</a>
+      <a data-id="3" data-replace tabindex="0">web products</a><span data-parent="3">websites and web applications</span>.
+      <span data-parent="6">From user experience and user interface design, to front-end and back-end development.</span>
+    </p>
+    
+    <p data-parent="3">I co-founded 
+      <a target="_blank" href="http://uruguaypass.uy/en" class="uruguaypass">UruguayPass</a> (2015) and <a target="_blank" href="http://uruguay360.com.uy" class="uruguay360">Uruguay360</a> (2010). I’ve also built <a target="_blank" href="http://propitapp.com" class="propit">Propit</a> (2014) and <a target="_blank" href="http://dowithpie.com">Pie</a> (2012).</p>
+
+    <p>
+      <span data-parent="4">I’m available for freelance work.</span>
+      <a data-id="4" tabindex="0">You should</a> <a data-id="5" tabindex="0">say hello</a>.
+    </p>
+    
+    <p data-parent="5">
+      <a target="_blank" href="mailto:hello@hernansartorio.com">Email me</a>, or find me on 
+      <a target="_blank" href="https://dribbble.com/hernansartorio" class="dribbble">Dribbble</a>, 
+      <a target="_blank" href="https://twitter.com/hernansartorio" class="twitter">Twitter</a>, 
+      <a target="_blank" href="https://github.com/hernansartorio">GitHub</a> or 
+      <a target="_blank" href="https://linkedin.com/in/hernansartorio" class="linkedin">LinkedIn</a>.
+    </p>
+
+  </div>
+
+  {% javascript v1/application %}
+  
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-64633646-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+  <script type="text/javascript">
+  var clicky_site_ids = clicky_site_ids || [];
+  clicky_site_ids.push(100858933);
+  (function() {
+    var s = document.createElement('script');
+    s.type = 'text/javascript';
+    s.async = true;
+    s.src = '//static.getclicky.com/js';
+    ( document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0] ).appendChild( s );
+  })();
+  </script>
+  <noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/100858933ns.gif" /></p></noscript>
+
+</body>
+</html>

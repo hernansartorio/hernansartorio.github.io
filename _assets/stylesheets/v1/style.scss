@@ -10,7 +10,7 @@ body {
   position: relative;
   text-rendering: optimizeLegibility;
   @media screen and (min-width: 720px) {
-    font-size: 18px;
+    font-size: 20px;
   }
 }
 
@@ -40,18 +40,22 @@ a {
   padding-bottom: 1px;
   text-decoration: none; 
   transition: border .2s ease-in-out;
-  border-bottom: 2px solid #ddd;
-  &:hover, &:active, &:focus { 
-    border-bottom-color: #bbb;
+  &[href] {
+    border-bottom: 2px solid #666;
+    &:hover, &:active, &:focus { 
+      border-bottom-color: #444;
+    }
+  }
+  &[data-id] {
+    cursor: pointer;
+    border-bottom: 2px solid #d5d5d5;
+    &:hover, &:active, &:focus { 
+      border-bottom-color: #ccc;
+    }
   }
   &.uruguaypass {
     &:hover, &:active, &:focus { 
       border-bottom-color: #207cc7;
-    }
-  }
-  &.bookup {
-    &:hover, &:active, &:focus { 
-      border-bottom-color: #11b880;
     }
   }
   &.twitter {
@@ -64,21 +68,30 @@ a {
       border-bottom-color: #ea4c89;
     }
   }
-  &.github {
-    &:hover, &:active, &:focus { 
-      border-bottom-color: #444;
-    }
-  }
   &.linkedin {
     &:hover, &:active, &:focus { 
       border-bottom-color: #0077b5;
     }
   }
+  &.propit {
+    &:hover, &:active, &:focus { 
+      border-bottom-color: #39c57e;
+    }
+  }
+  &.uruguay360 {
+    &:hover, &:active, &:focus { 
+      border-bottom-color: #389cdc;
+    }
+  }
+}
+
+*[data-parent]:not(.show), .hide {
+  display: none;
 }
 
 .container {
   margin: 0 auto;
-  max-width: 34em;
+  max-width: 33em;
   overflow: hidden;
   padding: 60px 24px;
   @media screen and (min-height: 640px) {
