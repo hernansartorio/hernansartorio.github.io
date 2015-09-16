@@ -56,6 +56,12 @@ a {
       border-color: #11b880;
     }
   }
+  &.uruguay360 {
+    border-color: rgba(#389cdc, .66);
+    &:hover, &:active, &:focus { 
+      border-bottom-color: #389cdc;
+    }
+  }
   &.twitter {
     border-color: rgba(#55acee, .66);
     &:hover, &:active, &:focus {
