@@ -86,6 +86,12 @@ a {
       border-color: #0077b5;
     }
   }
+  &.citrusbyte {
+    border-color: rgba(#f64d65, .66);
+    &:hover, &:active, &:focus {
+      border-color: #f64d65;
+    }
+  }
 }
 
 .container {
