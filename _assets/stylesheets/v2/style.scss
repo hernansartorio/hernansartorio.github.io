@@ -1,0 +1,105 @@
+body {
+  // background-color: #fcfcfc;
+  color: #555;
+  font-family: 'Nitti', monospace;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  text-rendering: optimizeLegibility;
+  @media screen and (min-width: 720px) {
+    font-size: 20px;
+  }
+}
+
+html:not([class]), .tr-coretext.tr-aa-subpixel, .tr-coretext.tr-aa-unknown-subpixel {
+  body {
+    font-weight: 300;
+  }
+}
+
+::selection {
+  background: #f0f0f0; 
+}
+::-moz-selection {
+  background: #f0f0f0; 
+}
+
+p {
+  line-height: 1.6;
+  margin: 0;
+  margin-bottom: 1.6em;
+}
+
+a {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  color: inherit; 
+  outline: none;
+  padding-bottom: 1px;
+  text-decoration: none; 
+  transition: border .2s ease-in-out;
+  border-bottom: 2px solid #ccc;
+  &:hover, &:active, &:focus { 
+    border-bottom-color: #bbb;
+  }
+  &.uruguaypass {
+    border-color: rgba(#207cc7, .66);
+    &:hover, &:active, &:focus {
+      border-color: #207cc7;
+    }
+  }
+  &.bookup {
+    border-color: rgba(#11b880, .66);
+    &:hover, &:active, &:focus {
+      border-color: #11b880;
+    }
+  }
+  &.uruguay360 {
+    border-color: rgba(#389cdc, .66);
+    &:hover, &:active, &:focus { 
+      border-bottom-color: #389cdc;
+    }
+  }
+  &.twitter {
+    border-color: rgba(#55acee, .66);
+    &:hover, &:active, &:focus {
+      border-color: #55acee;
+    }
+  }
+  &.dribbble {
+    border-color: rgba(#ea4c89, .66);
+    &:hover, &:active, &:focus {
+      border-color: #ea4c89;
+    }
+  }
+  &.github {
+    border-color: rgba(#444, .66);
+    &:hover, &:active, &:focus{ 
+      border-color: #444;
+    }
+  }
+  &.linkedin {
+    border-color: rgba(#0077b5, .66);
+    &:hover, &:active, &:focus {
+      border-color: #0077b5;
+    }
+  }
+  &.citrusbyte {
+    border-color: rgba(#f64d65, .66);
+    &:hover, &:active, &:focus {
+      border-color: #f64d65;
+    }
+  }
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 34em;
+  overflow: hidden;
+  padding: 60px 24px;
+  @media screen and (min-height: 640px) {
+    padding: 120px 24px;
+  }
+}
