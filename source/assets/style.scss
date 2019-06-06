@@ -1,92 +1,88 @@
 ---
 ---
 
+html, body {
+  height: 100%;
+}
+
 body {
-  color: #555;
-  font-family: "Ideal Sans SSm A", "Ideal Sans SSm B", sans-serif;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 1;
+  color: #333;
+  display: flex;
+  font-family: "Quarto A", "Quarto B", sans-serif;
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 1.5;
   margin: 0;
   padding: 0;
   position: relative;
   text-rendering: optimizeLegibility;
+
+  @media screen and (min-width: 800px) {
+    font-size: 48px;
+  }
 }
 
-html:not([class]), .tr-coretext.tr-aa-subpixel, .tr-coretext.tr-aa-unknown-subpixel {
-  body {
-    font-weight: 300;
+.container {
+  margin: auto;
+  max-width: 18em;
+  overflow: hidden;
+  padding: 30px;
+}
+
+p {
+  margin: 0 0 1em 0;
+  text-shadow: 0 1px 0 #fff, 0 -1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff;
+}
+
+a {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  box-shadow: inset 0 -4px 0 #ccc;
+  color: inherit;
+  outline: none;
+  text-decoration: none;
+  transition: box-shadow 300ms;
+
+  &:hover, &:active, &:focus {
+    box-shadow: inset 0 -4px 0 #666;
+  }
+
+  &.twitter {
+    box-shadow: inset 0 -4px 0 rgba(#55acee, .6);
+
+    &:hover, &:active, &:focus {
+      box-shadow: inset 0 -4px 0 #55acee;
+    }
+  }
+
+  &.dribbble {
+    box-shadow: inset 0 -4px 0 rgba(#ea4c89, .6);
+
+    &:hover, &:active, &:focus {
+      box-shadow: inset 0 -4px 0 #ea4c89;
+    }
+  }
+
+  &.linkedin {
+    box-shadow: inset 0 -4px 0 rgba(#0077b5, .6);
+
+    &:hover, &:active, &:focus {
+      box-shadow: inset 0 -4px 0 #0077b5;
+    }
+  }
+
+  &.instagram {
+    box-shadow: inset 0 -4px 0 rgba(#e4405f, .6);
+
+    &:hover, &:active, &:focus {
+      box-shadow: inset 0 -4px 0 #e4405f;
+    }
   }
 }
 
 ::selection {
   background: #f0f0f0;
 }
+
 ::-moz-selection {
   background: #f0f0f0;
-}
-
-p {
-  line-height: 1.6;
-  margin: 0;
-  margin-bottom: 1.6em;
-}
-
-a {
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  box-shadow: inset 0 -2px 0 #ccc;
-  color: inherit;
-  outline: none;
-  text-decoration: none;
-  transition: box-shadow .2s ease-in-out;
-  text-shadow: 0 0 1px #fff, 0 0 1px #fff, 0 0 1px #fff;
-  &:hover, &:active, &:focus {
-    box-shadow: inset 0 -2px 0 #bbb;
-  }
-  &.twitter {
-    box-shadow: inset 0 -2px 0 rgba(#55acee, .6);
-    &:hover, &:active, &:focus {
-      box-shadow: inset 0 -2px 0 #55acee;
-    }
-  }
-  &.dribbble {
-    box-shadow: inset 0 -2px 0 rgba(#ea4c89, .6);
-    &:hover, &:active, &:focus {
-      box-shadow: inset 0 -2px 0 #ea4c89;
-    }
-  }
-  &.github {
-    box-shadow: inset 0 -2px 0 rgba(#444, .6);
-    &:hover, &:active, &:focus{
-      box-shadow: inset 0 -2px 0 #444;
-    }
-  }
-  &.linkedin {
-    box-shadow: inset 0 -2px 0 rgba(#0077b5, .6);
-    &:hover, &:active, &:focus {
-      box-shadow: inset 0 -2px 0 #0077b5;
-    }
-  }
-  &.citrusbyte {
-    box-shadow: inset 0 -2px 0 rgba(#f64d65, .6);
-    &:hover, &:active, &:focus {
-      box-shadow: inset 0 -2px 0 #f64d65;
-    }
-  }
-  &.instagram {
-    box-shadow: inset 0 -2px 0 rgba(#e4405f, .6);
-    &:hover, &:active, &:focus {
-      box-shadow: inset 0 -2px 0 #e4405f;
-    }
-  }
-}
-
-.container {
-  margin: 0 auto;
-  max-width: 25em;
-  overflow: hidden;
-  padding: 60px 24px;
-  @media screen and (min-height: 640px) {
-    padding: 120px 24px;
-  }
 }
