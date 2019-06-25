@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Starting with why
+excerpt: I’ve been thinking about starting a personal blog for years now, but I always doubted myself. Why would anyone want to read what I write? Why write at all?
 ---
 # Starting with why
 

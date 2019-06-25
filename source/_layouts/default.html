@@ -5,7 +5,17 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
-    <title>{% if page.title %}{{ page.title }} | {% endif %}Hernán Sartorio</title>
+    <meta property="og:type" content="{% if page.title %}article{% else %}website{%endif%}" />
+    <meta property="og:url" content="{{ page.url | prepend: site.url }}" />
+    <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
+    <meta property="og:site_name" content="{{ site.title }}" />
+    <meta property="og:description" content="{{ page.excerpt }}" />
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@hernansartorio" />
+    <meta name="twitter:creator" content="@hernansartorio" />
+
+    <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
 
     <link rel="stylesheet" type="text/css" href="https://cloud.typography.com/6289852/7393952/css/fonts.css" />
     <link rel="stylesheet" type="text/css" href="{{ '/assets/style.css' }}" />
