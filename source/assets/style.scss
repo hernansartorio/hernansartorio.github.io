@@ -1,82 +1,32 @@
 ---
 ---
-
-html, body {
-  height: 100%;
-}
-
+// Base
 body {
   color: #333;
-  display: flex;
-  font-family: "Quarto A", "Quarto B", sans-serif;
-  font-size: 30px;
-  font-weight: 800;
+  font-family: "Ideal Sans SSm A", "Ideal Sans SSm B", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
   line-height: 1.5;
   margin: 0;
-  padding: 0;
-  position: relative;
+  padding: 180px 24px 180px;
   text-rendering: optimizeLegibility;
-
-  @media screen and (min-width: 800px) {
-    font-size: 48px;
-  }
-}
-
-.container {
-  margin: auto;
-  max-width: 18em;
-  overflow: hidden;
-  padding: 30px;
-}
-
-p {
-  margin: 0 0 1em 0;
-  text-shadow: 0 1px 0 #fff, 0 -1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff;
 }
 
 a {
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  box-shadow: inset 0 -4px 0 #ccc;
   color: inherit;
   outline: none;
-  text-decoration: none;
-  transition: box-shadow 300ms;
+  transition-property: text-decoration-color;
+  transition-duration: 200ms;
+  text-decoration: underline;
+  text-decoration-color: #bbb;
 
   &:hover, &:active, &:focus {
-    box-shadow: inset 0 -4px 0 #666;
+    text-decoration-color: #333;
   }
+}
 
-  &.twitter {
-    box-shadow: inset 0 -4px 0 rgba(#55acee, .6);
-
-    &:hover, &:active, &:focus {
-      box-shadow: inset 0 -4px 0 #55acee;
-    }
-  }
-
-  &.dribbble {
-    box-shadow: inset 0 -4px 0 rgba(#ea4c89, .6);
-
-    &:hover, &:active, &:focus {
-      box-shadow: inset 0 -4px 0 #ea4c89;
-    }
-  }
-
-  &.linkedin {
-    box-shadow: inset 0 -4px 0 rgba(#0077b5, .6);
-
-    &:hover, &:active, &:focus {
-      box-shadow: inset 0 -4px 0 #0077b5;
-    }
-  }
-
-  &.instagram {
-    box-shadow: inset 0 -4px 0 rgba(#e4405f, .6);
-
-    &:hover, &:active, &:focus {
-      box-shadow: inset 0 -4px 0 #e4405f;
-    }
-  }
+h1, h2, h3, p {
+  margin: 0;
 }
 
 ::selection {
@@ -85,4 +35,197 @@ a {
 
 ::-moz-selection {
   background: #f0f0f0;
+}
+
+// Layout
+.container {
+  margin: auto;
+  max-width: 1120px;
+}
+
+.content, .post > * {
+  max-width: 728px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer {
+  margin-top: 120px;
+  text-align: center;
+
+  &_link {
+    box-shadow: none !important;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    &:hover {
+      color: #000;
+    }
+  }
+}
+
+// Home page
+.about {
+  font-family: "Quarto A", "Quarto B", sans-serif;
+  font-size: 44px;
+  font-weight: 800;
+
+  p {
+    margin-bottom: 1em;
+  }
+
+  a {
+    &.twitter {
+      text-decoration-color: rgba(#55acee, .6);
+
+      &:hover, &:active, &:focus {
+        text-decoration-color: #55acee;
+      }
+    }
+
+    &.dribbble {
+      text-decoration-color: rgba(#ea4c89, .6);
+
+      &:hover, &:active, &:focus {
+        text-decoration-color: #ea4c89;
+      }
+    }
+
+    &.linkedin {
+      text-decoration-color: rgba(#0077b5, .6);
+
+      &:hover, &:active, &:focus {
+        text-decoration-color: #0077b5;
+      }
+    }
+
+    &.instagram {
+      text-decoration-color: rgba(#e4405f, .6);
+
+      &:hover, &:active, &:focus {
+        text-decoration-color: #e4405f;
+      }
+    }
+  }
+}
+
+.home-heading {
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin-bottom: 1em;
+  margin-top: 90px;
+  text-transform: uppercase;
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  &_item + &_item {
+    margin-top: 24px;
+  }
+
+  &_meta {
+    color: #aaa;
+    display: block;
+    font-size: 14px;
+  }
+
+  &_link {
+    font-family: "Quarto A", "Quarto B", sans-serif;
+    font-size: 36px;
+    font-weight: 800;
+    line-height: 1.1;
+  }
+}
+
+// Post page
+.post {
+  line-height: 1.7;
+
+  h1, h2, h3 {
+    font-family: "Quarto A", "Quarto B", sans-serif;
+    font-weight: 800;
+    line-height: 1.1;
+    margin-top: 2em;
+  }
+
+  h1 {
+    font-size: 64px;
+    margin-top: 0;
+  }
+
+  h2 {
+    font-size: 36px;
+  }
+
+  h3 {
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 21px;
+    margin-bottom: 0;
+    margin-top: 1.5em;
+  }
+
+  h2, h3 {
+    + p {
+      margin-top: 1em;
+    }
+  }
+
+  &_meta {
+    margin-top: 3em;
+  }
+
+  &_date {
+    display: block;
+    color: #aaa;
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  body {
+    padding-bottom: 120px;
+    padding-top: 120px;
+  }
+
+  .about {
+    font-size: 32px;
+  }
+
+  .home-heading {
+    font-size: 16px;
+  }
+
+  .list_link {
+    font-size: 28px;
+  }
+
+  .list_meta {
+    font-size: 12px;
+  }
+
+  .post {
+    p {
+      font-size: 18px;
+    }
+
+    h1 {
+      font-size: 48px;
+    }
+
+    h2 {
+      font-size: 28px;
+    }
+  }
+
+  .post_date, .footer_link {
+    font-size: 14px;
+  }
 }
