@@ -13,15 +13,16 @@ body {
 }
 
 a {
+  box-shadow: inset 0 -1px 0 #fff, inset 0 -3px 0 #bbb;
   color: inherit;
   outline: none;
-  transition-property: text-decoration-color;
+  text-decoration: none;
+  text-shadow: 0 1px 0 #fff, 0 -1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff;
+  transition-property: box-shadow, color;
   transition-duration: 200ms;
-  text-decoration: underline;
-  text-decoration-color: #bbb;
 
   &:hover, &:active, &:focus {
-    text-decoration-color: #333;
+    box-shadow: inset 0 -1px 0 #fff, inset 0 -3px 0 #333;
   }
 }
 
@@ -76,35 +77,41 @@ h1, h2, h3, p {
   }
 
   a {
+    box-shadow: inset 0 -4px 0 #bbb;
+
+    &:hover, &:active, &:focus {
+      box-shadow: inset 0 -4px 0 #333;
+    }
+
     &.twitter {
-      text-decoration-color: rgba(#55acee, .6);
+      box-shadow: inset 0 -4px 0 rgba(#55acee, .6);
 
       &:hover, &:active, &:focus {
-        text-decoration-color: #55acee;
+        box-shadow: inset 0 -4px 0 #55acee;
       }
     }
 
     &.dribbble {
-      text-decoration-color: rgba(#ea4c89, .6);
+      box-shadow: inset 0 -4px 0 rgba(#ea4c89, .6);
 
       &:hover, &:active, &:focus {
-        text-decoration-color: #ea4c89;
+        box-shadow: inset 0 -4px 0 #ea4c89;
       }
     }
 
     &.linkedin {
-      text-decoration-color: rgba(#0077b5, .6);
+      box-shadow: inset 0 -4px 0 rgba(#0077b5, .6);
 
       &:hover, &:active, &:focus {
-        text-decoration-color: #0077b5;
+        box-shadow: inset 0 -4px 0 #0077b5;
       }
     }
 
     &.instagram {
-      text-decoration-color: rgba(#e4405f, .6);
+      box-shadow: inset 0 -4px 0 rgba(#e4405f, .6);
 
       &:hover, &:active, &:focus {
-        text-decoration-color: #e4405f;
+        box-shadow: inset 0 -4px 0 #e4405f;
       }
     }
   }
