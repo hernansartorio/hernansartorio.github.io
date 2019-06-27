@@ -15,7 +15,7 @@ This is the main and more practical reason for why I’m starting to write now. 
 
 ## Writing can be helpful to other people
 
-A common thought I had was that I don’t know enough about any subject that would qualify me to write about it. People with more experience than me have already written about the same things I know or I’m learning. What could *I* contribute?
+A common thought I had was that I don’t know enough to be qualified to write about any subject. People with more experience than me have already written about the same things I know or I’m learning. What could *I* contribute?
 
 Eventually, I realized that [there’s no magic amount of experience that would make me worthy of sharing my ideas][14]. In fact, it’s irrelevant. [People who have just learned something][15] [are the most qualified to teach it][16]. Sharing what I know—even if it’s something new to me—can be helpful to people who are on the same learning path. And I know this because I sure as hell have learned a lot from people who have been generous enough to write about what they’ve learned and shared it with the world.
 
