@@ -7,7 +7,7 @@ excerpt: I’ve been thinking about starting a personal blog for years now, but 
 
 I’ve been thinking about starting a personal blog for years now, but I always doubted myself. Why would anyone want to read what I write? Why write at all?
 
-Over time I’ve seen [enough][1] [evidence][2] [to][3] [convince][4] [myself][5] [that][6] [the][7] [benefits][8] [of][9] [writing][10] [far][11] [outweigh][12] any doubts I might have.
+Over time I’ve seen [enough][1] [evidence][2] [to][3] [convince][4] [myself][5] [that][6] [the][7] [benefits][8] [of][9] [writing][10] far outweigh any doubts I might have.
 
 ## Writing can be good for my career
 
@@ -32,12 +32,10 @@ I’m not sure what will come out of this, but I’m betting that it’s a good 
 [5]: https://ryanhoover.me/post/70793631386/blogging-is-the-new-resume
 [6]: https://stevecheney.com/on-how-to-be-discovered/
 [7]: https://twitter.com/tomcritchlow/status/893132703364763648
-[8]: https://twitter.com/patio11/status/1130481000214028289
-[9]: https://twitter.com/notdetails/status/1110694275325587459
-[10]: https://twitter.com/david_perell/status/1124002449646395392
-[11]: https://twitter.com/david_perell/status/1139012915397369856
-[12]: https://twitter.com/austinkleon/status/1085644216259264514
-[13]: https://www.brainpickings.org/2012/05/08/carl-sagan-on-books/
-[14]: https://medium.com/@sara_ann_marie/dont-feel-like-an-expert-share-anyway-661f2f8cd038
-[15]: https://austinkleon.com/2015/06/14/to-be-a-teacher-and-remain-a-student/
-[16]: https://m.signalvnoise.com/giving-less-advice/
+[8]: https://twitter.com/david_perell/status/1124002449646395392
+[9]: https://twitter.com/david_perell/status/1139012915397369856
+[10]: https://twitter.com/austinkleon/status/1085644216259264514
+[11]: https://www.brainpickings.org/2012/05/08/carl-sagan-on-books/
+[12]: https://medium.com/@sara_ann_marie/dont-feel-like-an-expert-share-anyway-661f2f8cd038
+[13]: https://austinkleon.com/2015/06/14/to-be-a-teacher-and-remain-a-student/
+[14]: https://m.signalvnoise.com/giving-less-advice/
