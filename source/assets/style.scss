@@ -1,10 +1,22 @@
 ---
 ---
+// Variables
+$gray-dark: #333;
+$gray: #aaa;
+$font-size-big: 21px;
+$font-size: 18px;
+$font-size-small: 16px;
+$font-size-smaller: 14px;
+
 // Base
+* {
+  box-sizing: border-box;
+}
+
 body {
-  color: #333;
+  color: $gray-dark;
   font-family: "Ideal Sans SSm A", "Ideal Sans SSm B", sans-serif;
-  font-size: 18px;
+  font-size: $font-size;
   font-weight: 300;
   line-height: 1.5;
   margin: 0;
@@ -13,7 +25,7 @@ body {
 }
 
 a {
-  box-shadow: inset 0 -1px 0 #fff, inset 0 -3px 0 #bbb;
+  box-shadow: inset 0 -1px 0 #fff, inset 0 -3px 0 #ccc;
   color: inherit;
   outline: none;
   text-decoration: none;
@@ -22,7 +34,7 @@ a {
   transition-duration: 200ms;
 
   &:hover, &:active, &:focus {
-    box-shadow: inset 0 -1px 0 #fff, inset 0 -3px 0 #333;
+    box-shadow: inset 0 -1px 0 #fff, inset 0 -3px 0 $gray-dark;
   }
 }
 
@@ -36,6 +48,53 @@ h1, h2, h3, p {
 
 ::-moz-selection {
   background: #f0f0f0;
+}
+
+.input {
+  -webkit-appearance: none;
+  background-color: #fff;
+  border: none;
+  border-bottom: 1px solid #ddd;
+  color: $gray-dark;
+  height: 32px;
+  font-family: inherit;
+  font-size: $font-size-small;
+  font-weight: inherit;
+  outline: none;
+  padding: 0;
+  transition: border-color 200ms;
+  width: 100%;
+
+  &:focus, &.-focus {
+    border-color: $gray-dark;
+  }
+
+  &::placeholder {
+    color: #ddd;
+  }
+}
+
+.button {
+  background-color: transparent;
+  border: none;
+  color: $gray-dark;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: $font-size-small;
+  font-weight: 600;
+  height: 32px;
+  line-height: 32px;
+  outline: none;
+  padding: 0 16px;
+  text-align: center;
+  transition-duration: 200ms;
+  transition-property: color;
+  user-select: none;
+  white-space: nowrap;
+
+  &:hover, &:focus, &:active {
+    color: #000;
+  }
 }
 
 // Layout
@@ -56,7 +115,7 @@ h1, h2, h3, p {
 
   &_link {
     box-shadow: none !important;
-    font-size: 16px;
+    font-size: $font-size-small;
     text-decoration: none;
     text-transform: uppercase;
 
@@ -77,10 +136,10 @@ h1, h2, h3, p {
   }
 
   a {
-    box-shadow: inset 0 -4px 0 #bbb;
+    box-shadow: inset 0 -4px 0 #ccc;
 
     &:hover, &:active, &:focus {
-      box-shadow: inset 0 -4px 0 #333;
+      box-shadow: inset 0 -4px 0 $gray-dark;
     }
 
     &.twitter {
@@ -118,7 +177,7 @@ h1, h2, h3, p {
 }
 
 .home-heading {
-  font-size: 18px;
+  font-size: $font-size;
   font-weight: 500;
   letter-spacing: 1px;
   margin-bottom: 1em;
@@ -136,9 +195,9 @@ h1, h2, h3, p {
   }
 
   &_meta {
-    color: #aaa;
+    color: $gray;
     display: block;
-    font-size: 14px;
+    font-size: $font-size-smaller;
   }
 
   &_link {
@@ -147,6 +206,13 @@ h1, h2, h3, p {
     font-weight: 800;
     line-height: 1.1;
   }
+}
+
+.subscribe-form {
+  align-items: flex-end;
+  display: flex;
+  margin-top: 24px;
+  max-width: 336px;
 }
 
 // Post page
@@ -174,7 +240,7 @@ h1, h2, h3, p {
   }
 
   p {
-    font-size: 21px;
+    font-size: $font-size-big;
     margin-bottom: 0;
     margin-top: 1.5em;
   }
@@ -191,8 +257,8 @@ h1, h2, h3, p {
 
   &_date {
     display: block;
-    color: #aaa;
-    font-size: 16px;
+    color: $gray;
+    font-size: $font-size-small;
   }
 }
 
@@ -207,7 +273,7 @@ h1, h2, h3, p {
   }
 
   .home-heading {
-    font-size: 16px;
+    font-size: $font-size-small;
   }
 
   .list_link {
@@ -220,7 +286,7 @@ h1, h2, h3, p {
 
   .post {
     p {
-      font-size: 18px;
+      font-size: $font-size;
     }
 
     h1 {
@@ -233,6 +299,15 @@ h1, h2, h3, p {
   }
 
   .post_date, .footer_link {
-    font-size: 14px;
+    font-size: $font-size-smaller;
   }
+}
+
+// Util
+.text-gray {
+  color: $gray;
+}
+
+.text-small {
+  font-size: $font-size-small;
 }
