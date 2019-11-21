@@ -42,6 +42,10 @@ h1, h2, h3, p {
   margin: 0;
 }
 
+img {
+  max-width: 100%;
+}
+
 ::selection {
   background: #f0f0f0;
 }
@@ -217,6 +221,7 @@ h1, h2, h3, p {
 
 // Post page
 .post {
+  font-size: $font-size-big;
   line-height: 1.7;
 
   h1, h2, h3 {
@@ -232,15 +237,14 @@ h1, h2, h3, p {
   }
 
   h2 {
-    font-size: 36px;
+    font-size: 40px;
   }
 
   h3 {
-    font-size: 24px;
+    font-size: 28px;
   }
 
   p {
-    font-size: $font-size-big;
     margin-bottom: 0;
     margin-top: 1.5em;
   }
@@ -294,7 +298,11 @@ h1, h2, h3, p {
     }
 
     h2 {
-      font-size: 28px;
+      font-size: 32px;
+    }
+
+    h3 {
+      font-size: 24px;
     }
   }
 
